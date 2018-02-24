@@ -1,3 +1,3 @@
 # setup development environment
-* [windows](setup/windows)
-* [linux](setup/linux)
+* [windows](setup/windows/index.md)
+* [linux](setup/linux/index.md)
