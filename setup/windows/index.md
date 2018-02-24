@@ -5,7 +5,7 @@
 
 ## scoop
 * packages
-  * Gow - The lightweight alternative to Cygwin : https://github.com/bmatzelle/gow
+  * gow - The lightweight alternative to Cygwin : https://github.com/bmatzelle/gow
   * gitkraken
   * go
   * nodejs
