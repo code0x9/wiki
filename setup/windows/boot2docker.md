@@ -16,10 +16,19 @@ docker-machine ssh boot2docker
 ```
 sudo vi /var/lib/boot2docker/profile
 ```
-3. override environment variables
+3. override configuration
+  * via environment variables
 ```
 DOCKER_HOST='-H tcp://0.0.0.0:2375'
 DOCKER_TLS=no
+```
+  * via /etc/docker/daemon.json : need to remove -H fd:// at /lib/systemd/system/docker.service
+```
+{
+  "debug": false,
+  "tls": false,
+  "hosts": ["fd://", "tcp://0.0.0.0:2375"]
+}
 ```
 4. restart boot2docker
 ```
